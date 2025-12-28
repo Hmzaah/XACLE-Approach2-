@@ -8,7 +8,7 @@
 
 This repository implements **Approach 2**: a heterogeneous *split‑brain* architecture that combines explicit **geometric feature injection** with deep semantic embeddings to predict audio–text alignment scores.
 
-![Architecture](https://raw.githubusercontent.com/Hmzaah/XACLE-Approach2-/main/architecture_diagram_v1.png "Approach 2: Geometry-Injected Split-Brain Architecture")
+![Architecture](architecture_diagram_v1.png)
 
 ---
 
@@ -38,10 +38,10 @@ This repository implements **Approach 2**: a heterogeneous *split‑brain* arch
 
 The final prediction is a weighted fusion of two complementary learners:
 
-[ y = 0.56,f_{XGB}(x) + 0.44,f_{SVR}(x) ]
+$$y = 0.56f_{XGB}(x) + 0.44f_{SVR}(x)$$
 
-* **XGBoost (w = 0.56):** Captures high‑frequency nonlinear interactions (Depth = 6, LR = 0.01)
-* **SVR (w = 0.44):** Models the smooth score manifold (RBF kernel, C = 0.5, ε = 0.1)
+* **XGBoost (w = 0.56):** Captures high‑frequency nonlinear interactions ($$Depth = 6, LR = 0.01$$)
+* **SVR (w = 0.44):** Models the smooth score manifold (RBF kernel, $$C = 0.5, ε = 0.1$$)
 
 ### 3. Validation Strategy (Critical)
 
