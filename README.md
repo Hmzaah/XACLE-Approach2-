@@ -38,7 +38,7 @@ This repository implements **Approach 2**: a heterogeneous *split‑brain* arch
 
 The final prediction is a weighted fusion of two complementary learners:
 
-[ y = 0.56,f_{XGB}(x) + 0.44,f_{SVR}(x) ]
+$$y = 0.56f_{XGB}(x) + 0.44f_{SVR}(x)$$
 
 * **XGBoost (w = 0.56):** Captures high‑frequency nonlinear interactions (Depth = 6, LR = 0.01)
 * **SVR (w = 0.44):** Models the smooth score manifold (RBF kernel, C = 0.5, ε = 0.1)
