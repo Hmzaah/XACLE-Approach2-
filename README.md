@@ -5,7 +5,6 @@
 
 # XACLE-Approach2
 
-> **Official 2nd Place Solution** for the ICASSP 2026 XACLE Grand Challenge.
 
 This repository implements **Approach 2**: a heterogeneous *split‑brain* architecture that combines explicit **geometric feature injection** with deep semantic embeddings to predict audio–text alignment scores.
 
@@ -15,7 +14,7 @@ This repository implements **Approach 2**: a heterogeneous *split‑brain* arch
 
 ## 🌟 Highlights
 
-* **2nd Place Winner:** Achieved an SRCC of **0.653** on the official leaderboard.
+* Achieved an SRCC of **0.653** on the official leaderboard.
 * **Geometric Injection:** Explicit computation of **Cosine Similarity, Angular Distance, and L1/L2 norms** between audio and text embeddings.
 * **Heterogeneous Stacking:** Combines **XGBoost** (tree‑based) and **SVR** (kernel‑based) predictors for stability and accuracy.
 * **Massive Feature Space:** **9,220‑dimensional** fused representation from Whisper v2, MS‑CLAP, LAION‑CLAP, and DeBERTaV3.
