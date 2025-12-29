@@ -7,7 +7,7 @@
 
 This repository implements **Approach 2**: a heterogeneous *split-brain* architecture that combines explicit **geometric feature injection** with deep semantic embeddings to predict audio–text alignment scores.
 
-![Architecture](architecture_diagram.png)
+![Architecture](doc/architecture_diagram.png)
 
 ## 🌟 Highlights
 
